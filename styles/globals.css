@@ -1,9 +1,13 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(3, 243, 211);
 }
 
 a {
@@ -11,6 +15,36 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+main {
+  margin: 2rem auto;
+  padding-block: 2rem;
+  width: 80vw;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cocktailgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 405px);
+  justify-content: center;
+  gap: 2rem;
+}
+
+.drinkcard {
+  text-align: center;
+}
+
+.drinkname {
+  font-weight: 400;
+}
+
+.detail {
+  align-items: center;
 }
